@@ -1,12 +1,18 @@
-Basic docker laravel setup
+##docker-laravel-boilerplate
+Basic docker laravel setup for school projects.
+
 Created this to avoid having to install MAMP, XAMPP or some other iffy piece of software locally
 
 Based on [this](https://medium.com/@shakyShane/laravel-docker-part-1-setup-for-development-e3daaefaf3c) Medium article.
 
-Run artisan commands with
+You can artisan commands with
 ```bash
 docker-compose exec app php artisan whatever --arguments
 ```
+
+Boot with `docker-compose up --build`.
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
