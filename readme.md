@@ -13,6 +13,15 @@ First, install dependencies via `docker run --rm -v $(pwd):/app composer/compose
 You might need to substitute `$(pwd)` with the absolute path of your current working folder on Windows machines for the command to work - you can print this with `pwd`. 
 Then boot with `docker-compose up --build`. The first build is likely going to take a while.
 
+You're likely to want to run `artisan key:generate` and `artisan optimize` so execute the following:
+```
+cp .env.example .env &&
+docker-compose exec app php artisan key:generate &&
+docker-compose exec app php artisan optimize
+```
+
+Once done, open localhost:8080 to see the Laravel welcome screen running.
+
 
 ## About Laravel
 
