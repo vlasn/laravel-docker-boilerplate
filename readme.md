@@ -1,4 +1,4 @@
-##docker-laravel-boilerplate
+## docker-laravel-boilerplate
 Basic docker laravel setup for school projects.
 
 Created this to avoid having to install MAMP, XAMPP or some other iffy piece of software locally
