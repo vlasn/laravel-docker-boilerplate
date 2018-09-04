@@ -9,8 +9,9 @@ You can artisan commands with
 ```bash
 docker-compose exec app php artisan whatever --arguments
 ```
-
-Boot with `docker-compose up --build`.
+First, install dependencies via `docker run --rm -v $(pwd):/app composer/composer install`.
+You might need to substitute `$(pwd)` with the absolute path of your current working folder on Windows machines for the command to work - you can print this with `pwd`. 
+Then boot with `docker-compose up --build`. The first build is likely going to take a while.
 
 
 ## About Laravel
