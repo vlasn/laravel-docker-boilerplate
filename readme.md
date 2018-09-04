@@ -5,7 +5,7 @@ Created this to avoid having to install MAMP, XAMPP or some other iffy piece of 
 
 Based on [this](https://medium.com/@shakyShane/laravel-docker-part-1-setup-for-development-e3daaefaf3c) Medium article.
 
-You can artisan commands with
+You can run artisan commands with
 ```bash
 docker-compose exec app php artisan whatever --arguments
 ```
